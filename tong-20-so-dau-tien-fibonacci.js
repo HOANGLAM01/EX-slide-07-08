@@ -9,4 +9,4 @@ for (number1,number2;count<19; count++) {
     number2 = N;
     sout = sout + N;
 }
-document.writeln(sout);
+document.writeln(sout+2);
