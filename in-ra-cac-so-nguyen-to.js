@@ -1,23 +1,23 @@
 var numbers = Number(prompt("Mởi nhập số lượng số nguyên tố"));
 let count = 0;
 let N = 2;
-let i = 1;
+let i = 2;
 let check = true
+var sout = "";
 while (count < numbers) {
-    for (i=1; i<=N-1 ;i++){
+    check=true;
+    for (i=2 ; i<=N-1 ;i++){
         if (N%i == 0) {
             check = false;
             break;
         }
-
-
-
     }
     if (check) {
-        document.writeln(N + " ,");
+        sout += N + ",";
         count= count+1;
-        N++
 
     }
+    N++;
 }
+document.writeln(sout)
 
